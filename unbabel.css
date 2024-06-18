@@ -572,7 +572,7 @@
 } */
 .ninth{
     height: 600px;
-    background-image: url(../../../Downloads/Background-Featured-Integration-02.svg);
+    background-image: url(./images/Background-Featured-Integration-02.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -589,7 +589,7 @@
 }
 .triodec{
     height: 500px;
-    background-image: url(../../../Downloads/CTA-Background-Pink.svg);
+    background-image: url(./images/CTA-Background-Pink.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
