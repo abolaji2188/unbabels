@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+.first{
+    height: 650px;
+}
 .unbabel{
     width: 200px;
     height: 50px;
@@ -13,16 +16,28 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid rgb(236, 233, 233);
+    position: -webkit-sticky;
     position: sticky;
+    cursor: pointer;
 }
 .navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    position: relative;
+    width: 1263px;
+    justify-content: space-between;
+    z-index: 800;
+}
+.detailsp{
+    /* display: flex; */
+    position: -webkit-sticky;
     position: sticky;
 }
-/* .detailsp{
-    display: flex;
-} */
 .sticky{
-    position: sticky;
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
+    position: fixed;
 }
 .List{
     display: flex;
@@ -40,6 +55,7 @@
     color: white;
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
 }
 .ents{
     background-color:white ;
@@ -49,6 +65,8 @@
     color: rgb(0,130,143);
     font-size: 15px;
     font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 .link{
     width: 50px;
@@ -68,32 +86,21 @@
     gap: 20px;
     align-items: center;
 }
-.parff{
+.parent2{
     position: relative;
     cursor: pointer;
     display: flex;
     gap: 20px;
     align-items: center;
 }
-.paren2{
-    position: relative;
-    cursor: pointer;
+.flexx{
     display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.parent3{
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    gap: 20px;
-    align-items: center;
 }
 .parent4{
     position: relative;
     cursor: pointer;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: center;
 }
 .parent5{
@@ -109,35 +116,38 @@
     display: none;
     padding-top: 50px;
     row-gap: 20px;
+    border-radius: 10px;
 }
 .par2{
-    height: 250px;
-    width: 800px;
+    height: 200px;
+    width: 600px;
     display: none;
-    padding-top: 50px;
+    padding-top: 30px;
     row-gap: 20px;
-}
-.par3{
-    height: 250px;
-    width: 800px;
-    display: none;
-    padding-top: 50px;
-    row-gap: 20px;
+    border-radius: 10px;
 }
 .par4{
+    height: 200px;
+    width: 400px;
+    display: none;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+/* .par3{
+    height: 200px;
+    width: 600px;
+    display: none;
+    padding-top: 30px;
+    row-gap: 10px;
+    border-radius: 10px;
+} */
+/* .par5{
     height: 250px;
     width: 800px;
     display: none;
     padding-top: 50px;
     row-gap: 20px;
-}
-.par5{
-    height: 250px;
-    width: 800px;
-    display: none;
-    padding-top: 50px;
-    row-gap: 20px;
-}
+} */
 .bold:hover{
     color: rgb(82, 56, 250);
 }
@@ -145,27 +155,40 @@
     position: absolute;
     /* display: block; */
     background-color: white;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 10px gray;
     z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    left: -350px;
-    top: 30px ;
+    left: -300px;
+    top: 17px ;
 }
-.parent:hover .par2{
+.parent2:hover .par2{
     position: absolute;
     /* display: block; */
     background-color: white;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 10px gray;
     z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    left: -350px;
-    top: 30px ;
+    left: -450px;
+    top: 15px ;
+}
+.parent4:hover .par4{
+    position: absolute;
+    /* display: block; */
+    background-color: white;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: -100px;
+    top: 15px ;
 }
 .video{
     width: 500px;
@@ -200,6 +223,61 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.linh{
+    list-style-type: none;
+    font-size: 15px;
+    font-family: 600;
+    line-height: 25px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.linex{
+    width: 200px;
+    height: 230px;
+    background-color: rgb(56,67,208);
+    position: relative;
+    top: -48px;
+    left: 18px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+.parent2:hover .linex{
+    display: block;
+    position: absolute;
+    top: 100px;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 10;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    left: 140px;
+    top: 15px ;
+}
+.parent3:hover .linex{
+    display: block;
+    position: absolute;
+    top: 100px;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 10;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    left: 140px;
+    top: 15px ;
+}
+.parent3:hover .par3{
+    display: block;
+    position: absolute;
+    top: 100px;
+    box-shadow: 3px 3px 10px gray;
+    z-index: 10;
+    left: 200px;
+    top: 15px;
 }
 .imgw1{
     width: 60px;
@@ -243,6 +321,16 @@
     align-items: center;
     margin-left: 150px;
 }
+.liber:hover{
+    color: rgb(71, 71, 254);
+}
+.lons{
+    list-style-type: none;
+    /* display: flex; */
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 22px;
+}
 .coster{
     width: 500px;
     height: 500px;
@@ -275,49 +363,18 @@
     width: 150px;
     height: 150px;
 }
-.imgabso1:hover{
-    background-color: inherit;
-    border-radius: 20px;
-  /* box-shadow: 0 5px #666; */
-  transform: translateY(12px);
-  /* transform: translateX(5px); */
-  /* transform: translateX(5px); */
-}
+
 .imgabso2{
     width: 150px;
     height: 150px;
-}
-.imgabso2:hover{
-    background-color: inherit;
-    border-radius: 20px;
-  /* box-shadow: 0 5px #666; */
-  transform: translateY(12px);
-  /* transform: translateX(5px); */
-  /* transform: translateX(5px); */
 }
 .imgabso3{
     width: 150px;
     height: 150px;
 }
-.imgabso3:hover{
-    background-color: inherit;
-    border-radius: 20px;
-  /* box-shadow: 0 5px #666; */
-  transform: translateY(12px);
-  /* transform: translateX(5px); */
-  /* transform: translateX(5px); */
-}
 .imgabso4{
     width: 150px;
     height: 150px;
-}
-.imgabso4:hover{
-    background-color: inherit;
-    border-radius: 20px;
-  /* box-shadow: 0 5px #666; */
-  transform: translateY(12px);
-  /* transform: translateX(5px); */
-  /* transform: translateX(5px); */
 }
 .childimage1{
     width: 150px;
@@ -353,12 +410,13 @@
 }
 .parbtn:hover .chibtn{
     display: block;
-    gap: 50px;
     position: absolute;
-    top: 80px;
+    top: 40px;
+    /* cursor: pointer; */
 }
 .chibtn{
     display: none;
+    /* cursor: pointer; */
 }
 .ink{
     border-right: 2px dashed white;
@@ -370,7 +428,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-
 }
 .nick{
     position: absolute;
@@ -385,13 +442,13 @@
 }
 .nick3{
     position: absolute;
-    right:200px;
+    right:220px;
     top: 230px;
 }
 .nick4{
     position: absolute;
     right: 20px;
-    top: 240px;
+    top: 230px;
 }
 .beep{
     font-size: 18px;
@@ -420,7 +477,22 @@
 .con1{
     width: 250px;
     height: 70px;
-    font-family: "raleway",sans-serif;
+    /* display: flex; */
+    /* font-family: "raleway",sans-serif; */
+}
+.cone{
+    width: 100px;
+    height: 70px;
+    /* display: flex; */
+    /* font-family: "raleway",sans-serif; */
+}
+.con2{
+    width: 250px;
+    height: 70px;
+    margin-top: 200px;
+    padding-right: 1000px;
+    /* margin-bottom: 1000px; */
+    /* font-family: "raleway",sans-serif; */
 }
 .getde{
     width: 100px;
@@ -431,11 +503,14 @@
     font-size: 13px;
     font-weight: 600;
 }
+.getde:hover{
+    border: 1px solid gray;
+}
 .hpis{
     width: 550px;
     height: 430px;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 .text{
     line-height: 30px;
@@ -444,16 +519,18 @@
 }
 .image{
     width: 200px;
-    height: 150px;
+    height: 120px;
     /* margin-top: -1000px; */
     position: absolute;
-    top: 130px;
+    top: 150px;
     left: 550px;
     z-index: 100;
     /* margin-left: -250px; */
 }
 .pee{
     font-weight: 100;
+    padding-top: 8px;
+    line-height: 20px;
 }
 .line{
     width: 3px;
@@ -532,7 +609,7 @@
 .lefttext{
     width: 500px;
     height: 300px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 50px;
 }
 .header{
@@ -577,6 +654,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    z-index: -10;
 }
 .tenth{
     height: 500px;
